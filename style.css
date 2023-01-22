@@ -1,0 +1,547 @@
+/* ================================================ Google Fonts ======================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+/* ================================================ BASE ============================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn-color: #4e5dc0;
+  --head: #777c85;
+  --heading: #16171c;
+  --font-1: "Raleway", sans-serif;
+  --font-2: "Manrope", sans-serif;
+  --font-3: "Roboto Flex", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px*/
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3.8rem;
+  color: var(--heading);
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* ================================================== Reusable- CSS ============================================= */
+.grid {
+  display: grid;
+  gap: 8rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section {
+  overflow-x: hidden;
+  padding: 0 6rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.grid-four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid1 {
+  display: grid;
+  column-gap: 2rem;
+}
+
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* ================================================== Header-Section-Start ============================================= */
+
+.header {
+  padding: 0 4.8rem;
+  height: 16rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  height: 8.2rem;
+  width: 9.8rem;
+  margin-left: 6rem;
+}
+
+.nav-lists {
+  display: flex;
+  gap: 7.2rem;
+}
+
+.navbar_link {
+  font-size: 1.8rem;
+  color: var(--head);
+  font-family: var(--font-1);
+}
+
+.team_link {
+  color: var(--btn-color);
+  text-decoration: underline;
+}
+
+.navbar_link:hover {
+  color: var(--btn-color);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.btn {
+  margin-right: 10rem;
+  width: 15rem;
+  font-size: 1.6rem;
+  height: 3.4rem;
+  outline: none;
+  border: none;
+  font-family: var(--font-1);
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--btn-color);
+  cursor: pointer;
+}
+
+/* =============================================================== Hero-Section =========================================== */
+
+.hero-image img {
+  width: 57.6rem;
+  border-radius: 30px;
+}
+
+.hero-heading {
+  margin-top: 5rem;
+  font-family: var(--font-3);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 4.5rem;
+  font-stretch: 100;
+  font-variation-settings: "GRAD" 122, "slnt" 0, "XTRA" 603, "XOPQ" 96,
+    "YOPQ" 100, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  margin-bottom: 2rem;
+}
+
+.line {
+  color: var(--head);
+  width: 33%;
+  margin-bottom: 5rem;
+  margin-left: 0.5rem;
+}
+
+.hero-para {
+  color: #000000;
+  font-family: var(--font-1);
+  line-height: 3.4rem;
+}
+
+.hero-para span {
+  color: var(--btn-color);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* ============================================ Bio-Section ======================================================== */
+
+.section-bio {
+  padding: 13rem 0;
+}
+
+.bio-image {
+  object-fit: cover;
+}
+
+.bio-image img {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 30px;
+}
+
+.bio-heading {
+  margin-top: 5rem;
+  font-family: var(--font-3);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 4.5rem;
+  font-stretch: 100;
+  font-variation-settings: "GRAD" 122, "slnt" 0, "XTRA" 603, "XOPQ" 96,
+    "YOPQ" 100, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  margin-bottom: 2rem;
+}
+
+.bio-line {
+  color: var(--head);
+  width: 33%;
+  margin-bottom: 5rem;
+  margin-left: 0.5rem;
+}
+
+.bio-para {
+  color: #000000;
+  font-family: var(--font-1);
+  line-height: 3.4rem;
+  font-size: 2rem;
+}
+
+.bio-para span {
+  color: var(--btn-color);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* ============================================= Horizontal_Rule ===================================================== */
+.hori {
+  color: var(--head);
+  max-width: 130rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+/* ============================================= Footer -Section ===================================================== */
+
+.footer {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.first-f img {
+  width: 45%;
+}
+
+.blue {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--btn-color);
+  line-height: 4.2rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-1);
+  cursor: pointer;
+}
+
+#dart {
+  text-decoration: underline;
+}
+
+.first-f p {
+  color: #999999;
+  font-family: var(--font-1);
+  line-height: 3.4rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.second-f {
+  color: #999999;
+  font-family: var(--font-1);
+  line-height: 3.4rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.third-f {
+  color: #999999;
+  font-family: var(--font-1);
+  line-height: 3.4rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#a {
+  color: var(--btn-color);
+}
+
+.fourth-f i {
+  font-size: 5rem;
+  cursor: pointer;
+  color: var(--btn-color);
+}
+
+/* =============================================== Credits To  ==================================================== */
+
+.credits {
+  text-align: center;
+}
+
+.credits p {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #5b4bdb;
+  font-family: var(--font-1);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+/* =================================================== Media Quries ================================================= */
+/* ==================================== 1499px =================================  */
+@media (max-width: 1499px) {
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .hori {
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    margin-top: 2rem;
+  }
+  .container {
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+}
+
+/* ==================================== 1301px =================================  */
+
+@media (max-width: 1301px) {
+  .hero-image img {
+    margin-top: 7rem;
+  }
+
+  .html {
+    font-size: 60%;
+  }
+
+  .line {
+    margin-bottom: 0.5rem;
+    width: 70%;
+  }
+
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 100%;
+    margin: 0 -0.5rem;
+  }
+}
+
+/* ==================================== 1200px =================================  */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 56%;
+  }
+
+  .container {
+    max-width: 90rem;
+  }
+
+  .hero-image {
+    max-width: 45rem;
+  }
+
+  .hero-image img {
+    max-width: 45rem;
+  }
+
+  .hero-para {
+    line-height: 2.4rem;
+  }
+
+  .bio-image {
+    max-width: 45rem;
+  }
+
+  .bio-image img {
+    max-width: 45rem;
+  }
+
+  .bio-para {
+    line-height: 3rem;
+  }
+
+  .bio-line {
+    margin-bottom: 1rem;
+  }
+
+  .bio-heading {
+    margin-top: 3rem;
+  }
+}
+
+/* ========================================= 1000px ======================================================================  */
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 80rem;
+  }
+  .header {
+    margin: 0 -4rem;
+  }
+
+  .bio-image {
+    max-width: 40rem;
+  }
+
+  .bio-image img {
+    max-width: 40rem;
+  }
+
+  .hero-image {
+    max-width: 40rem;
+  }
+
+  .hero-image img {
+    max-width: 40rem;
+  }
+}
+
+/* =========================================800px ======================================================================  */
+
+@media (max-width: 800px) {
+  .nav-lists {
+    display: none;
+  }
+
+  .btn {
+    margin-right: 0;
+  }
+
+  .grid-two-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-four-column {
+    grid-template-columns: auto auto auto;
+  }
+
+  .hero-para {
+    line-height: 3.5rem;
+  }
+
+  .container {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  .bio-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 80rem;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 80rem;
+  }
+
+  /* .hero-image img {
+    width: 100rem;
+  } */
+
+  .bio-para {
+    line-height: 3.5rem;
+  }
+}
+
+/* =========================================600px ======================================================================  */
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .grid-four-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================= 500px ======================================================================  */
+@media (max-width: 500px) {
+  .container {
+    max-width: 40rem;
+  }
+  .grid-four-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  html {
+    font-size: 58%;
+  }
+
+  .hero-image {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+  }
+}
+
+/* ========================================= 430px ======================================================================  */
+@media (max-width: 430px) {
+  .container {
+    max-width: 40rem;
+  }
+
+  .hero-image {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+  }
+
+  html {
+    font-size: 52%;
+  }
+
+  .first-f img {
+    width: 30%;
+  }
+}
+
+/* ========================================= 400px ======================================================================  */
+@media (max-width:400px) {
+
+  html {
+    font-size: 50%;
+  }
+  .container{
+    max-width: 36rem;
+  }
+}
+
+/* ========================================= 375px ======================================================================  */
+@media (max-width:375px) {
+  .container{
+    max-width: 34rem;
+  }
+
+  .hero-image img{
+    width: 30rem;
+  }
+
+  
+  .bio-image img{
+    width: 30rem;
+    height: 30rem;
+  }
+}
